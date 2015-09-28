@@ -45,6 +45,7 @@ $(document).ready(function() {
                     success: function(result) {
                         $('#persons').puidatatable("refresh");
                         $("#formDiv").puidialog('hide');
+                        $("input").val("")
                     }
                 });
             }
