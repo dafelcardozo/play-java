@@ -709,6 +709,23 @@ $(function() {
                 this.columnWidthsFixed = true;
             }
         }
+        ,
+        _rerender: function(data) {
+                        this.data = data;
+                        this._renderData();
+                    },
+
+                refresh: function() {
+                    if(this.options.datasource) {
+                        if($.type(this.options.datasource) === 'function') {
+                            if(!this.options.lazy) {
+
+                                this.options.datasource.call(this, this._rerender);
+
+                            }
+                        }
+                    }
+                }
     
     });
 });

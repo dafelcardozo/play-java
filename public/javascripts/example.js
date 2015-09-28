@@ -1,5 +1,5 @@
 $(document).ready(function() {
-     $("table").puidatatable({
+     $("#persons").puidatatable({
         columns: [
             {field:'fname', headerText: 'Nombre', sortable:true},
             {field:'lname', headerText: 'Apellido', sortable:true}
@@ -38,7 +38,15 @@ $(document).ready(function() {
             icon : 'ui-icon-check',
             click : function()
             {
-                $("form").submit();
+                var url = $("form").attr("action") + "?"+$("form").serialize()
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    success: function(result) {
+                        $('#persons').puidatatable("refresh");
+                        $("#formDiv").puidialog('hide');
+                    }
+                });
             }
         }]
     });
@@ -56,7 +64,7 @@ $(document).ready(function() {
             url: '/eliminar?personId='+personId,
             type: 'DELETE',
             success: function(result) {
-                location.reload();
+                $('#persons').puidatatable("refresh");
             }
         });
     });
@@ -67,3 +75,5 @@ var personId ;
 addMessage = function(severity, msg) {
     $('h1').puimessages('show', severity, msg);
 }
+
+
