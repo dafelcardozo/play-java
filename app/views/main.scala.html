@@ -1,0 +1,44 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>@title</title>
+
+        <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/main.css")'>
+        <link rel="shortcut icon" type="image/png" href='@routes.Assets.versioned("images/favicon.png")'>
+        <!--
+        <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("css/bootstrap.min.css"))'>
+        -->
+        <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("css/smoothness/jquery-ui-1.9.0.custom.min.css"))'>
+
+
+        <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("font-awesome.css"))'>
+        <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("font-awesome-jsf.css"))'>
+
+
+        <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))'></script>
+        <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery-ui-1.9.0.custom.js"))'></script>
+
+
+        <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/themes/aristo/theme.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/primeui-2.1.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/datatable.css")'>
+
+        <script type='text/javascript' src='@routes.Assets.versioned("javascripts/primeui-2.1.js")'></script>
+
+        <script type='text/javascript' src='@routes.Assets.versioned("javascripts/core/core.js")'></script>
+        <script type="text/javascript" src='@routes.Assets.versioned("javascripts/datatable.js")'></script>
+
+
+        <!--
+        <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("themes/aristo/theme.css"))'>
+        <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("primeui.css"))'>
+        <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("primeui.js"))'></script>
+-->
+
+
+    </head>
+    <body>
+        @content
+    </body>
+</html>

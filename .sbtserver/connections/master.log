@@ -1,0 +1,13 @@
+New log file opened at Fri Sep 25 14:41:46 COT 2015 by 5480@DAVIDCARDOZO
+Taking next connection to: 55018
+New client attempting to connect on port: 55019-55018
+  Address = /10.0.1.224:55018
+This client on port 55019 has personId 1210f7b9-784d-4aaa-b180-3331db9ffcd3 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-1210f7b9-784d-4aaa-b180-3331db9ffcd3
+Taking next connection to: 55018
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 5480@DAVIDCARDOZO logs at Fri Sep 25 14:44:49 COT 2015, goodbye.
