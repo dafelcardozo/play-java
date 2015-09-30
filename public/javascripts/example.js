@@ -51,24 +51,6 @@ $(document).ready(function() {
             }
         }]
     });
-
-    $("#mostrarDialog").click(function() {
-        $("#formDiv").puidialog('show');
-    });
-    $("button").puibutton();
-    $('h1').puimessages();
-
-    addMessage('warn', {summary: 'Una aplicaci&oacute;n de ejemplo - ', detail: 'Esta es mi aplicaci&oacute;n de ejemplo'});
-
-    $("#eliminar").click(function() {
-        $.ajax({
-            url: '/eliminar?personId='+personId,
-            type: 'DELETE',
-            success: function(result) {
-                $('#persons').puidatatable("refresh");
-            }
-        });
-    });
 });
 
 var personId ;
