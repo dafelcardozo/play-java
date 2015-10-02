@@ -4,9 +4,53 @@
 <script src='@routes.Assets.versioned("js/index.js")'></script>
 <script src='@routes.Assets.versioned("javascripts/example.js")'></script>
 
-<h1></h1>
+
+
+<p id="tittle1">
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>XLS
+</p>
+
+<ul id="mb1">
+    <li>
+        <a >Principal</a>
+    </li>
+    <li>
+        <a >Socios</a>
+    </li>
+    <li>
+        <a >CFD's</a>
+    </li>
+    <li>
+        <a >Rentenciones</a>
+    </li>
+    <li>
+        <a >Empresa</a>
+    </li>
+    <li>
+        <a >Bitacora</a>
+    </li>
+    <li>
+        <a >Configuracion</a>
+    </li>
+    <li>
+        <a >Integracion</a>
+    </li>
+    <li>
+        <a >Reportes</a>
+    </li>
+</ul>
+
+<div id="accordionCritries">
+    <h3>Filtros de Busqueda</h3>
+    <div>
+        <input id="inputCriteries1" type="text" />
+    </div>
+</div>
+
+<!--<h1></h1>-->
 <button id="mostrarDialog">Agregar</button>
-<button id="eliminar">Eliminar</button>
+<input id="eliminar" type="button" value="Eliminar" />
+<i class="icon-save"></i>
 <div title="Ingrese su nombre y apellido" id="formDiv">
     <form action="@routes.Application.addPerson()" method="POST">
         <div class="form-group">
@@ -22,5 +66,6 @@
 
 <table id="persons" class="table">
 </table>
+<!--<div id="pag"></div>-->
 
 }

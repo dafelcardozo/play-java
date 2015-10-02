@@ -1,8 +1,21 @@
 $(document).ready(function() {
      $("#persons").puidatatable({
+         paginator: {
+                        rows: 10
+                    },
         columns: [
-            {field:'fname', headerText: 'Nombre', sortable:true},
-            {field:'lname', headerText: 'Apellido', sortable:true}
+            {field:'fname', headerText: 'Head 1', sortable:true},
+            {field:'lname', headerText: 'Head 2', sortable:true},
+            {field:'lname', headerText: 'Head 3', sortable:true},
+            {field:'lname', headerText: 'Head 4', sortable:true},
+            {field:'lname', headerText: 'Head 5', sortable:true},
+            {field:'lname', headerText: 'Head 6', sortable:true},
+            {field:'lname', headerText: 'Head 7', sortable:true},
+            {field:'lname', headerText: '', sortable:true},
+            {field:'lname', headerText: '', sortable:true},
+            {field:'lname', headerText: '', sortable:true},
+            {field:'lname', headerText: '', sortable:true},
+            {field:'lname', headerText: '', sortable:true}
         ],
         selectionMode:'single',
         datasource: function(callback) {
@@ -22,7 +35,9 @@ $(document).ready(function() {
      });
 
 
-    $("input").puiinputtext();
+
+//  ventana emergente para agregar personas
+    $("input[type='text']").puiinputtext();
     $("#formDiv").puidialog({
         showEffect : 'fade',
         hideEffect : 'fade',
@@ -51,6 +66,15 @@ $(document).ready(function() {
             }
         }]
     });
+//    fin de la ventana emergente para agregar personas
+
+        $('#accordionCritries').puiaccordion();
+        $('#mb1').puimenubar({
+            autoDisplay: false
+        });
+        $('#in').puiinputtext();
+        $('#eliminar').puibutton({    icon: 'fa-close'
+                                      , iconPos: 'right'});
 });
 
 var personId ;

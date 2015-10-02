@@ -1,0 +1,21 @@
+body{
+    padding: inherit;
+    width: 1000px;
+    margin:auto !important;
+}
+
+#accordionCritries{
+    padding: 10px 0px;
+}
+
+.pui-datatable-tablewrapper{
+    padding: 10px 0px;
+}
+
+.pui-menuitem .ui-widget .ui-corner-all{
+    padding: 0px 10px;
+}
+
+#tittle1{
+    font-size:30px;
+}
