@@ -43,14 +43,28 @@
 <div id="accordionCritries">
     <h3>Filtros de Busqueda</h3>
     <div>
-        <input id="inputCriteries1" type="text" />
+        <input id="inputCriteries1" type="date" />
+        <select id="basic" name="basic">
+            <option value="0">Combo</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
     </div>
 </div>
 
+<ul id="mb2">
+    <li>
+        <a id="mostrarDialog" data-icon="fa-plus">Nuevo</a>
+    </li>
+    <li>
+        <a id="eliminar" data-icon="fa-trash-o" >Eliminar</a>
+    </li>
+</ul>
+
+
 <!--<h1></h1>-->
-<button id="mostrarDialog">Agregar</button>
-<input id="eliminar" type="button" value="Eliminar" />
-<i class="icon-save"></i>
+
 <div title="Ingrese su nombre y apellido" id="formDiv">
     <form action="@routes.Application.addPerson()" method="POST">
         <div class="form-group">

@@ -69,11 +69,12 @@ $(document).ready(function() {
 //    fin de la ventana emergente para agregar personas
 
         $('#accordionCritries').puiaccordion();
-        $('#mb1').puimenubar({
-            autoDisplay: false
-        });
+        $('#basic').puidropdown();
+        $('#mb1').puimenubar({ autoDisplay: false});
+        $('#mb2').puimenubar({ autoDisplay: false});
         $('#in').puiinputtext();
-        $('#eliminar').puibutton({icon : 'fa-align-left'});
+        $('#mostrarDialog').puibutton({icon : 'fa-plus'});
+        $('#eliminar').puibutton({icon : 'fa-trash-o'});
 });
 
 var personId ;
