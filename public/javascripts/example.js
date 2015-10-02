@@ -73,8 +73,7 @@ $(document).ready(function() {
             autoDisplay: false
         });
         $('#in').puiinputtext();
-        $('#eliminar').puibutton({    icon: 'fa-close'
-                                      , iconPos: 'right'});
+        $('#eliminar').puibutton({icon : 'fa-align-left'});
 });
 
 var personId ;
